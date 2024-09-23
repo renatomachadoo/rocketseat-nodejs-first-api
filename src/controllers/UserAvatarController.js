@@ -24,7 +24,7 @@ class UserAvatarController{
 
     await knex("users").update(user).where({ id : user_id })
 
-    return response.json({ message : "Avatar alterado com sucesso!"})
+    return response.json({ avatar : user.avatar})
   }
 }
 
