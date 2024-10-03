@@ -26,6 +26,7 @@ class NoteCreateService{
     })
 
     await this.tagsRepositorie.create(tagsInsert)
+    return note_id
   }
 }
 
